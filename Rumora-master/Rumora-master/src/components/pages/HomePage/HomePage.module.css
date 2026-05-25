@@ -1,0 +1,85 @@
+.homePage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 25px 32px;
+    background: linear-gradient(-45.31deg, rgba(25.054851531982422, 241.2692108154297, 129.55838012695312, 1),rgba(143.81394958496094, 58.30296325683594, 180.46151733398438, 1) 100%);
+}
+
+.h1{
+    margin: 12px 0px 19px;
+    color: var(--font-dark);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.nav{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    gap: 21px;
+    
+}
+
+.search{
+    width: 100%;
+    border-radius: 33px;
+    background: rgba(229, 223, 223, 0.4);
+
+    padding: 13px 24px;
+
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--font-primary);
+}
+
+.musicContainer{
+    width: 100%;
+    height: 100%;
+    border-radius: 33px;
+    background: rgba(229, 223, 223, 0.4);
+    padding: 10px 20px 10px 0;
+    overflow: hidden;
+}
+
+.musicContainerInner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 10px;
+
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
+  
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+        
+    &::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+    }
+        
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.4);
+    }
+}
+
+

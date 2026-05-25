@@ -1,0 +1,44 @@
+.song{
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 35px 35px;
+
+    gap: 10px 30px;
+
+    padding: 15px;
+    border-radius: 20px;
+}
+
+
+.song:hover{
+    background-color: rgba(255,255,255, 0.1);
+}
+
+.preview{
+    grid-row: 1 / -1;
+
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--white);
+
+    img{
+        width: 100% !important;
+        min-height: 100%;
+    }
+
+}
+
+.title{
+    color: var(--font-primary);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.group{
+    color: var(--gray-light);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+}

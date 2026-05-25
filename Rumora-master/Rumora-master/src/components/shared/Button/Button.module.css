@@ -1,0 +1,36 @@
+.button{
+    padding: 10px 20px;
+    border-radius: 7px;
+
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    transition: all 0.3s;
+}
+
+.grad{
+    background: linear-gradient(90.00deg, rgba(143.81394958496094, 58.30296325683594, 180.46151733398438, 1),rgba(25.054851531982422, 241.2692108154297, 129.55838012695312, 1) 100%);
+    background-size: 120%;
+    background-position: 0%;
+}
+
+.ghost{
+    width: fit-content;
+    align-self: flex-end;
+    padding: 5px 30px;
+    border-radius: 20px !important;
+    background: var(--ghost);
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.ghost:hover{
+    transform: scale(1.05);
+}
+
+.grad:hover{
+    background-position: 100%;
+}

@@ -1,0 +1,22 @@
+.loading {
+	grid-column: 1 / -1;
+
+	align-items: center;
+	justify-content: center;
+
+	margin: 66px 0 0;
+}
+
+.imgWrapper {
+	width: 36px;
+	height: 36px;
+
+	transform: rotate(0deg);
+
+	animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
